@@ -21,6 +21,10 @@ class DebugViewHelper extends AbstractViewHelper
 
     protected $templateParsingPointers = [];
 
+    protected $escapeOutput = false;
+
+    protected $escapeChildren = false;
+
     protected static $gettableMethodPrefixes = ['get', 'is', 'has'];
 
     protected static $blacklistedMethods = [
