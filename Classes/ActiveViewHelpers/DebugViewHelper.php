@@ -107,7 +107,7 @@ class DebugViewHelper extends AbstractViewHelper
                     'Line %d, character %d: %s',
                     $pointers[0],
                     $pointers[1],
-                    $pointers[2]
+                    trim($pointers[2])
                 );
             }
             if (TYPO3_MODE === 'FE') {
