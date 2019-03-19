@@ -1,11 +1,8 @@
 <?php
-
-use TYPO3\CMS\Core\Core\Bootstrap;
-
 defined('TYPO3_MODE') or die();
 
 (function() {
-    $context = Bootstrap::getInstance()->getApplicationContext();
+    $context = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext();
     switch (true) {
         case $context->isTesting():
         case $context->isDevelopment():
